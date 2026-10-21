@@ -1,0 +1,25 @@
+MYO Quest — anatomical assets
+
+Source: Z-Anatomy / Models-of-human-anatomy
+https://github.com/Z-Anatomy/Models-of-human-anatomy
+Source archive: https://raw.githubusercontent.com/Z-Anatomy/Models-of-human-anatomy/master/Z-Anatomy.zip
+File: Z-Anatomy/Startup.blend (archive version dated 2023-05-02)
+Authors: Gauthier Kervyn, Marcin Zielinski and contributors.
+Underlying BodyParts3D models: Database Center for Life Science (DBCLS).
+License of Z-Anatomy adaptation and these derived GLB files: CC BY-SA 4.0.
+Full source license and required BodyParts3D credits: Z-Anatomy-LICENSE.txt.
+
+Adaptation by MYO Quest, 2026-10-21:
+- Read original mesh data without executing embedded Blender scripts.
+- Select 744 physical structures; exclude annotation meshes and cavity-volume helpers.
+- Preserve source base vertices, use saved world matrices, convert Z-up to glTF Y-up.
+- Triangulate polygons and recompute smooth vertex normals; no geometry decimation.
+- Separate muscles / skeletal support bundles, attach stable semantic ids and French labels.
+- Apply neutral anatomical display materials at runtime.
+- Source modifiers are not evaluated. Subdivision is not applied; fine ethmoidal cavities
+  produced by source booleans are not represented by the exported base mesh.
+- Some muscle groups (interossei, lumbricals) remain grouped as in the source.
+- Tendinous portions included within source muscle meshes are not separately segmented.
+
+Source SHA-256 and geometry counts are recorded in atlas.json.
+No clinical certification or specialist validation is implied.
